@@ -22,9 +22,21 @@ extension String {
         }
         return String(characterArray)
     }
+
+    func scramble() -> String {
+        // you can even use your custom extensions in other custom extensions...
+        let newString: String = self.silly()
+        var invertedChars = [Character]()
+    
+        for character in newString {
+            invertedChars.insert(character, at: 0)
+        }
+    
+        return String(invertedChars)
+    }
 }
 
 var sillyString = "I hate spam and eggs"
 
 print(sillyString.silly())
-print("the meaning of life the universe and everything is fourty two.".silly())
+print("the meaning of life the universe and everything is fourty two.".scramble())
