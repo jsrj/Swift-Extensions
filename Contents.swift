@@ -40,3 +40,18 @@ var sillyString = "I hate spam and eggs"
 
 print(sillyString.silly()) // --> I Hate SPaM ANd eggs
 print("the meaning of life the universe and everything is fourty two.".scramble()) // --> .OWt ytruOF si gNihtYReVE DNa EsreVINU Eht eFiL fo gNInAEM Eht
+
+
+
+// Mutating function within an extension...
+extension Int {
+    mutating func squared() -> Int {
+        self = self * self
+        return self
+    }
+}
+
+var aNumber = 9
+print(aNumber.squared())
+
+
