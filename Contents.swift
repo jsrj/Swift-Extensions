@@ -38,5 +38,5 @@ extension String {
 
 var sillyString = "I hate spam and eggs"
 
-print(sillyString.silly())
-print("the meaning of life the universe and everything is fourty two.".scramble())
+print(sillyString.silly()) // --> I Hate SPaM ANd eggs
+print("the meaning of life the universe and everything is fourty two.".scramble()) // --> .OWt ytruOF si gNihtYReVE DNa EsreVINU Eht eFiL fo gNInAEM Eht
